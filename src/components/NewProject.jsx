@@ -2,7 +2,7 @@ import Input from "./Input.jsx";
 import Modal from "./Modal.jsx";
 import { useRef } from "react";
 
-export default function NewProject({ onAdd, onCancel }) {
+export default function NewProject({ onAdd, onCancle }) {
   const modal = useRef(null);
 
   const title = useRef(null);
@@ -46,7 +46,7 @@ export default function NewProject({ onAdd, onCancel }) {
           <li>
             <button
               className="text-stone-800 hover:text-stone-950"
-              onClick={() => onCancel()}
+              onClick={onCancle}
             >
               Cancel
             </button>
