@@ -21,7 +21,7 @@ export default function NewProject({ onAdd, onCancle }) {
     ) {
       modal.current.open();
       return;
-      // return will stop the exe of the next function down below
+      // return will stop the exe of the function we are in 
     }
 
     onAdd({
