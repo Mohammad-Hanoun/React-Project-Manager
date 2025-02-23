@@ -86,9 +86,9 @@ function App() {
       return {
         ...prevState,
         selectedProjectId: undefined,
-        projects: prevState.projects.filter((project) => {
-          project.id !== projectState.selectedProjectId;
-        }),
+        projects: prevState.projects.filter(
+          (project) => project.id !== projectState.selectedProjectId
+        ),
       };
     });
   }
@@ -104,7 +104,6 @@ function App() {
       onAddTask={handleAddTask}
       onDeleteTask={handleDeleteTask}
       tasks={projectState.tasks}
-
     />
   );
 
