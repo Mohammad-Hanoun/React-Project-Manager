@@ -104,6 +104,7 @@ function App() {
       onAddTask={handleAddTask}
       onDeleteTask={handleDeleteTask}
       tasks={projectState.tasks}
+
     />
   );
 
@@ -121,6 +122,7 @@ function App() {
         onStartAddProject={handleAddProject}
         projects={projectState.projects}
         onSelectProject={handleSelectProject}
+        selectedProjectId={projectState.selectedProjectId}
       />
       {content}
     </main>
